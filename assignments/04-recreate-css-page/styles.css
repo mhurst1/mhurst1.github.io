@@ -1,7 +1,7 @@
 /*Matthew Hurst | CSCE 242*/
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Inter', sans-serif;
     background: rgb(0,0,0);
     width: 100%;
     margin: 0;
@@ -22,12 +22,14 @@ body{
 /* TOP HEADER NAVIGATION*/
 
 #top-header-nav{
+    display: flex;
     font-weight: bold;
+    list-style-type: none;
+    text-align: left;
 }
 #top-header-nav ul{
     display: flex;
-    list-style-type: none;
-    text-align: left;
+    align-items: center;
 }
 
 #top-header-nav li{
@@ -49,11 +51,15 @@ body{
 
 /*SCHOOL CLASS*/
 .school-class{
+    display: flex;
+    align-items: center;
     background: rgb(0,0,0);
 }
 .school-class h1{
+    margin-left: auto;
     text-align: right;
     color: rgb(255,255,255);
+    font-size: 1.65rem
 }
 .school-class img{
     display: block;
@@ -64,14 +70,21 @@ body{
 
 /* PAGE INFO NAV */
 #bottom-header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1.25rem;
     background: rgb(117, 0, 10);
 }
 
 #bottom-header-nav ul{
     display: flex;
+    flex-direction: column;
     list-style-type: none;
-    gap: 20px;
-    padding: 20px;
+    text-align: center;
+    gap: 12px;
+    padding: 0px;
 }
 
 #bottom-header-nav li{
@@ -81,21 +94,23 @@ body{
 #bottom-header-nav a{
     text-decoration: none;
     color: rgb(255,255,255);
+    height: 100%;
+    padding: 8px;
 }
 #bottom-header-nav a:hover{
     background: rgb(107, 0, 9);
 }
 
-
-
 /*FULL SCREEN PICTURES*/
 .full-screen-image{
+    overflow: visible;
+}
+.full-screen-image img{
     max-width: none;
     display: block;
     width: 100%;
     height: auto;
 }
-
 
 /*INTERSECTION*/
 .intersection{
@@ -133,8 +148,12 @@ body{
 /*Statement*/
 .statement{
     background: rgb(255,255,255);
+    text-align: center;
+    padding: 2rem, 4rem;
 }
 .statement img{
+    display: block;
+    margin: 2rem auto;
     border-radius: 1000px;
 }
 #quote{
@@ -172,12 +191,25 @@ body{
 /*NEWS FEED*/
 .news-feed{
     background: rgb(255,255,255);
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
-#news h2{
+.news h2{
     color: rgb(117, 0, 10);
 }
-#news a:hover{
+.news a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    padding: 0; 
+    align-items: center;
+    text-align: center;
+}
+.news a:hover{
     background: rgb(237, 237, 237);
 }
 
@@ -235,6 +267,8 @@ body{
 }
 
 #upper-footer{
+    display: flex;
+    flex-direction: column;
     background: rgb(237, 237, 237);
     padding: 10px;
 }
@@ -247,11 +281,11 @@ body{
 #upper-footer h4:hover{
     text-decoration: none;
 }
-#upper-footer a{
+.upper-col a{
     color: rgb(117, 0, 10);
     text-decoration: none;
 }
-#upper-footer a:hover{
+.upper-col a:hover{
     color: rgb(255,255,255);
     background: rgb(204, 47, 65);
 }
@@ -270,8 +304,99 @@ body{
     color: rgb(117, 0, 10);
     border: 1px solid rgb(117, 0, 10);
 }
+.upper-col{
+    width: 100%;
+}
+
+/*COLUMN 1*/
+#upper-col-1 h3{
+    margin: 0 0 1rem;
+    text-align: left;
+}
+
+#upper-col-1 h3 a{
+    color: rgb(117, 0, 10);
+    text-decoration: none;
+}
+
+#upper-col-1 h3 a:hover{
+    text-decoration: underline;
+    background: none;
+}
+
+#upper-col-1 button{
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    padding: 10px 15px;
+    border: 1px solid rgb(255,255,255);
+    margin: 0 0 1rem;
+}
+
+#upper-col-1 button:hover{
+    background: rgb(255,255,255);
+    color: rgb(117, 0, 10);
+    border: 1px solid rgb(117, 0, 10);
+}
+
+/*SOCIAL MEDIA ICONS*/
+.social-icons{
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.social-icons img{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
 
 
+/* COLUMN 2 */
+#upper-col-2 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+}
+
+#upper-col-2 a{
+    color: rgb(117, 0, 10);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#upper-col-2 a:hover{
+    text-decoration: underline;
+    background: none;
+}
+
+
+/* COLUMN 3 */
+#upper-col-3{
+    text-align: left;
+}
+
+#upper-col-3 h4{
+    margin: 0 0 0.75rem;
+}
+
+#upper-col-3 h4 a{
+    color: rgb(117, 0, 10);
+    text-decoration: underline;
+}
+
+#upper-col-3 h4 a:hover{
+    text-decoration: none;
+    background: none;
+}
+
+#upper-col-3 p{
+    margin: 0;
+    line-height: 1.6;
+}
 
 
 #middle-footer{
@@ -290,8 +415,6 @@ body{
 #middle-footer a:hover{
     background: rgb(204, 47, 65);
 }
-
-
 
 #lower-footer{
     background: rgb(0,0,0);
@@ -320,4 +443,173 @@ body{
 }
 #lower-footer a:hover{
     background: rgb(204, 47, 65);
+}
+
+
+/*MEDIA QUEREY*/
+@media (min-width: 900px) {
+
+    .school-class{
+        display: flex;
+        align-items: center;
+    }
+
+    .school-class h1{
+        margin-left: auto;
+        text-align: right;
+        font-size: 2rem;
+    }
+
+    #bottom-header-nav{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3rem;
+    }
+
+    #bottom-header-nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        text-align: right;
+        margin: 0;
+    }
+
+    #bottom-header-nav li{
+        width: auto;
+        flex: 1;
+        padding: 0;
+        flex: unset;
+    }
+
+    #bottom-header-nav a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .education,
+    .research,
+    .centers-institutes{
+        position: relative;
+        z-index: 10;
+        width: 50%;
+        margin-top: -15rem;
+        padding: 2rem;
+    }
+
+    .education{
+        margin-left: auto;
+        margin-right: 3rem;
+    }
+
+    .centers-institutes,
+    .research{
+        margin-right: auto;
+        margin-left: 3rem;
+    }
+
+    .news-feed{
+        display: flex;
+        flex-direction: row;  
+        gap: 3rem;
+        max-width: 80rem;
+        margin: 4rem auto;
+        padding: 4rem 2rem;
+    }
+
+    #news{
+        flex: 1;
+    }
+
+    .statement{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem 10rem;
+        text-align: left;
+    }
+    #name{
+        display: flex;
+        text-align: left;
+    }
+
+    .stay-connected div{
+        text-align: center;
+    }
+
+    #upper-footer,
+    #middle-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem;
+
+    }
+
+    .upper-col,
+    .explore{
+        flex: 1;
+    }
+
+    #upper-col-2{
+        border-left: 1px solid rgb(199, 199, 199);
+        border-right: 1px solid rgb(199, 199, 199);
+        padding: 0 2rem;
+    }
+    #upper-col-2 ul{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 1.25rem;
+    }
+
+
+    #middle-footer,
+    #lists{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .explore,
+    #lists section{
+        flex: 1;
+    }
+
+    #middle-footer ul,
+    #lists ul{
+        column-count: 2;
+        column-gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #middle-footer li,
+    #lists li{
+        break-inside: avoid;
+        padding: 0.25rem 0;
+    }
+
+    #colleges-and-schools{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #offices-and-divisions{
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    #tools{
+        flex: 0 0 16%;
+        max-width: 16%;
+    }
+
+    #lower-footer ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
