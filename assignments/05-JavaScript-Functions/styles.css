@@ -1,0 +1,83 @@
+/*Matthew Hurst | CSCE 242*/
+body{
+    background: rgb(187, 230, 230);
+    margin: auto;
+}
+
+#main-content{
+    background: rgb(187, 230, 230);;
+}
+#main-header{
+    background: rgb(187, 230, 230);;
+}
+#assignment{
+    text-align: center;
+}
+#description{
+    text-align: center;
+}
+.frames{
+    background: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.frame{
+    border: 1px solid blue;
+}
+
+#main-footer{
+    background: antiquewhite;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid blue;
+}
+
+#geometry-frame{
+    position: relative;
+}
+#geometry-frame .triangle{
+    position: relative;
+    right:0%;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border-left: 74px solid transparent;
+    border-right: 74px solid transparent;
+    border-bottom: 136px solid #881313;
+    display: none;
+}
+#geometry-frame.selected .triangle{
+    display: block;
+}
+
+.image-holder{
+    display: inline-block;
+    padding: 10px;
+}
+#frameImage{
+    width: 140px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+.image-holder{
+    border: none;
+}
+.image-holder.framed{
+    border-top: 8px solid red;
+    border-right: 8px solid green;
+    border-bottom: 8px solid blue;
+    border-left: 8px solid purple;
+}
+
+@media (min-width: 900px){
+    .frames{
+        flex-direction: row;
+        text-align: center;
+    }
+    .frame{
+        flex: 1;
+    }
+}
