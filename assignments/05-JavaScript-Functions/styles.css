@@ -1,14 +1,15 @@
 /*Matthew Hurst | CSCE 242*/
 body{
-    background: rgb(187, 230, 230);
+    background: #C0D2DF;
     margin: auto;
 }
 
 #main-content{
-    background: rgb(187, 230, 230);;
+    background: #BCC5E5;
+    border: 1px solid #37A7AB;
 }
 #main-header{
-    background: rgb(187, 230, 230);;
+    background: #BCC5E5;
 }
 #assignment{
     text-align: center;
@@ -17,21 +18,23 @@ body{
     text-align: center;
 }
 .frames{
-    background: antiquewhite;
+    background: #59817F;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 .frame{
-    border: 1px solid blue;
+    background: #BCC5E5;
+    border: 1px solid #37A7AB;
 }
 
 #main-footer{
-    background: antiquewhite;
+    background: #BCC5E5;
     text-align: center;
     padding: 8px;
-    border: 1px solid blue;
+    border: 1px solid #37A7AB;
 }
 
 #geometry-frame{
@@ -45,7 +48,7 @@ body{
     height: 0;
     border-left: 74px solid transparent;
     border-right: 74px solid transparent;
-    border-bottom: 136px solid #881313;
+    border-bottom: 136px solid #59817F;
     display: none;
 }
 #geometry-frame.selected .triangle{
@@ -75,6 +78,8 @@ body{
 @media (min-width: 900px){
     .frames{
         flex-direction: row;
+        gap: 60px;
+        padding: 20px;
         text-align: center;
     }
     .frame{
