@@ -1,5 +1,129 @@
 /*Matthew Hurst | CSCE 242*/
-
 body {
+    background-image: url(../../images/GymBackgroundMain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+#main-content{
+
+}
+#main-header{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+}
+#main-header h1{
+    font-size: 48px;
+}
+#main-nav{
     
+}
+#main-nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 49px;
+}
+#main-nav li{
+    font-size: 20px;
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+}
+#main-nav a:hover{
+    color: rgb(53, 127, 125);
+}
+
+#content h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+#upper-frame{
+    display: flex;
+    background: rgb(15, 19, 23, 0.8);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#upper-frame img{
+    display: block;
+    width: 224px;
+    height: 209px;
+    border-radius: 122px;
+}
+#upper-frame p{
+    font-size: 24px;
+    text-align: center;
+}
+
+#frame-description{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgb(15, 19, 23, 0.8);
+}
+
+#middle-frame img{
+    display: block;
+    width: 419px;
+    height: 219px;
+    border-radius: 113.5px;
+}
+#middle-frame button{
+    background: rgb(53, 127, 125);
+    width: 190px;
+    height: 39px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+}
+#middle-frame h2{
+    font-size: 32px;
+}
+#middle-frame p{
+    font-size: 24px;
+}
+
+.lower-section{
+    padding: 20px;
+}
+.lower-section h2{
+    font-size: 32px;
+    text-align: center;
+}
+#lower-frame img{
+    display: block;
+    width: 584px;
+    height: 198px;
+    border-radius: 20px;
+}
+#lower-frame button{
+    background: rgb(53, 127, 125);
+    width: 269px;
+    height: 39px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+}
+
+#main-footer{
+    background: rgb(61, 67, 75, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+#main-footer p{
+    font-family: 'Playfair Display';
+    font-size: 16px;
+}
+/*MEDIA QUEREY*/
+/*LARGER DISPLAYS*/
+@media (min-width: 900px) {
+
+    #upper-frame{
+        
+    }
 }
