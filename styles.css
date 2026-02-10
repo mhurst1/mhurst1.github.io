@@ -175,9 +175,9 @@ body {
 /*Larger Resolutions*/
 @media (min-width: 900px){
     #assignmentLinks ul, #project-section ul{
-        flex-direction: row;
-        flex-wrap: wrap;
-    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
     }
     .assign, .projects{
         flex: 1;
