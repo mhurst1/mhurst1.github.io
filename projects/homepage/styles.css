@@ -1,23 +1,28 @@
 /*Matthew Hurst | CSCE 242*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 body {
-    background-image: url(../../images/GymBackgroundMain.jpg);
+    background-image: url(../../images/GymBackground3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    margin: 0;
 }
 #main-content{
 
 }
 #main-header{
     background-color: rgb(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 15px;
 }
 #main-header h1{
     font-size: 48px;
 }
 #main-nav{
-    
+    display: flex;
+    justify-content: right;
 }
 #main-nav ul{
     display: flex;
@@ -40,11 +45,21 @@ body {
     text-align: center;
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+    padding-bottom: 10px;
+}
 #upper-frame{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgb(15, 19, 23, 0.8);
     border-radius: 20px;
     padding: 10px;
+    width: 269px;
+    height: 286px;
 }
 
 #upper-frame img{
@@ -55,7 +70,6 @@ body {
 }
 #upper-frame p{
     font-size: 24px;
-    text-align: center;
 }
 
 #frame-description{
@@ -65,8 +79,23 @@ body {
     border-radius: 20px;
     padding: 20px;
     background: rgb(15, 19, 23, 0.8);
+    width: 77%;
+    margin: auto;
 }
 
+.middle-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+#middle-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 #middle-frame img{
     display: block;
     width: 419px;
@@ -80,20 +109,41 @@ body {
     color: white;
     font-size: 24px;
     border-radius: 30px;
+    border: 1px solid white;
 }
-#middle-frame h2{
+#middle-frame button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
+}
+#middle-frame-txt{
+    text-align: center;
+    background: rgb(15, 19, 23, 0.8);
+    border-radius: 20px;
+    width: 559px;
+    height: 242px;
+    padding: 10px;
+}
+#middle-frame-txt h2{
     font-size: 32px;
 }
-#middle-frame p{
+#middle-frame-txt p{
     font-size: 24px;
 }
 
 .lower-section{
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 .lower-section h2{
     font-size: 32px;
     text-align: center;
+}
+#lower-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 #lower-frame img{
     display: block;
@@ -108,6 +158,12 @@ body {
     color: white;
     font-size: 24px;
     border-radius: 30px;
+    border: 1px solid white;
+}
+#lower-frame button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
 }
 
 #main-footer{
