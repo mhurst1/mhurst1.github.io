@@ -18,15 +18,18 @@ body {
 #main-header h1{
     font-size: 48px;
     font-family: "Playfair Display";
+    text-align: center;
 }
 #main-nav{
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 #main-nav ul{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style-type: none;
-    gap: 49px;
+    gap: 10px;
 }
 #main-nav li{
     font-size: 20px;
@@ -47,8 +50,9 @@ body {
 
 .cards{
     display: flex;
-    justify-content: center;
-    gap: 69px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding-bottom: 10px;
 }
 #upper-frame{
@@ -85,6 +89,7 @@ body {
 
 .middle-section{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -180,7 +185,25 @@ body {
 /*LARGER DISPLAYS*/
 @media (min-width: 900px) {
 
-    #upper-frame{
-        
+    
+    #main-header h1{
+        text-align: left;
+    }
+    #main-nav{
+        justify-content: flex-end;
+    }
+    #main-nav ul{
+        flex-direction: row;
+        gap: 49px;
+        margin: 0;
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+        gap: 69px;
+    }
+    .middle-section{
+        flex-direction: row;
+        text-align: left;
     }
 }
