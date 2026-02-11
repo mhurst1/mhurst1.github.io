@@ -1,0 +1,24 @@
+/*Matthew Hurst | CSCE 242*/
+body{
+    background: #C0D2DF;
+    margin: auto;
+}
+#main-header h1{
+    text-align: center;
+    color: rgb(0, 84, 84);
+}
+#main-header h2{
+    text-align: center;
+    color: darkcyan;
+}
+#main-nav{
+    text-align: center;
+}
+#main-nav ul{
+    list-style-type: none;
+    color: darkcyan;
+}
+#main-footer{
+    text-align: center;
+    color: rgb(0, 84, 84);
+}
