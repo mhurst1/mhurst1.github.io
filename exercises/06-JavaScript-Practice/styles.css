@@ -2,6 +2,7 @@
 /* Main Structure */
 :root {
     --main-background:#bde0fe;
+    --donation:50%;
 }
 
 body {
@@ -160,8 +161,9 @@ nav a {
     height:200px;
     margin-right:10%;
     border:2px solid turquoise;
-    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
+    background:linear-gradient(0deg, red 0% var(--donation), white var(--donation) 100%);
 }
+
 
 /* Typography */
 #main-header h1 {
