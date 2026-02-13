@@ -11,13 +11,89 @@ body{
     text-align: center;
     color: darkcyan;
 }
-#main-nav{
-    text-align: center;
+#main-nav-items li{
+    padding: 8px;
+    background: rgba(0,84,84,0.15);
 }
-#main-nav ul{
+#main-nav-items{
     list-style-type: none;
     color: darkcyan;
+    text-align: center;
 }
+#nav-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-toggle.closed div{
+    transform: rotate(180deg);
+}
+#nav-toggle div{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid rgb(0, 84, 84);
+    transition: transform 0.25s ease;
+
+}
+#top-links{
+    text-align: center;
+    margin: 8px 0 15px;
+}
+
+#top-links a{
+    color: rgb(0, 84, 84);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+#top-links a:not(:last-child)::after{
+    content: " | ";
+    color: rgba(0, 84, 84, 0.5);
+    margin: 0 6px;
+}
+#top-links a:hover{
+    text-decoration: underline;
+}
+.hidden{
+    display: none;
+}
+
+.main-content{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    color: rgb(0, 84, 84);
+}
+
+.exercise{
+    background: rgba(255,255,255,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="range"]{
+    width: 70%;
+    margin-top: 10px;
+}
+
+button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(0, 84, 84);
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
 #main-footer{
     text-align: center;
     color: rgb(0, 84, 84);

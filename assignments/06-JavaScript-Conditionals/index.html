@@ -14,14 +14,30 @@
         </header>
 
         <nav id="main-nav">
-            <ul>
-                <li>Exercise 1</li>
-                <li>Exercise 2</li>
+            <div id="nav-toggle">
+                <div></div>
+            </div>
+            <ul id="main-nav-items" class="hidden">
+                <li id="link-ex1">Exercise 1</li>
+                <li id="link-ex2">Exercise 2</li>
             </ul>
         </nav>
 
         <section class="main-content">
 
+            <section class="exercise hidden" id="exercise1">
+                <h2>Exercise 1: How many minutes until class?</h2>
+
+                <label for="minutesSlider">Minutes till class: <span id="minutesValue">30</span></label>
+                <input type="range" id="minutesSlider" min="0" max="60" value="30">
+                <p id="sliderMessage"></p>
+            </section>
+
+            <section class="exercise hidden" id="exercise2">
+                <h2>Exercise 2: Countdown till class</h2>
+                <button id="checkTimeBtn">Check Time</button>
+                <p id="countdownMessage"></p>
+            </section>
         </section>
     </body>
 
