@@ -44,7 +44,93 @@ body {
     color: rgb(53, 127, 125);
 }
 
+#content h1{
+    font-size: 32px;
+    text-align: center;
+    font-family: "Playfair Display";
+}
+.top-section p{ /*EDIT*/
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+     
+}
+.top-middle{
+    background: rgba(15, 19, 23,0.8);
+}
+.top-middle p{
+    font-size: 24px;
+    text-align: center;
+}
+.top-middle ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+.top-middle li{
+    font-size: 24px;
+}
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+#middle-frames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(15, 19, 23,0.8);
+    width: 293px;
+    height: 330px;
+    border-radius: 20px;
+}
+#middle-frames img{
+    display: block;
+    width: 292px;
+    height: 162px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#middle-frames h2{
+    font-size: 22px;
+}
+#middle-frames p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.lower-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#lower-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lower-frame img{
+    display: block;
+    height: 216px;
+    width: 384px;
+    border-radius: 30px;
+}
+#lower-frame-txt{
+    text-align: center;
+}
+#lower-frame-txt p{
+    font-size: 24px;
+}
+#lower-frame-txt h1{
+    font-size: 32px;
+}
 
 
 /*Footer*/
@@ -71,5 +157,15 @@ body {
         flex-direction: row;
         gap: 49px;
         margin: 0;
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+        gap: 88px;
+    }
+    .lower-section{
+        flex-direction: row;
+        text-align: left;
+        gap: 30px;
     }
 }

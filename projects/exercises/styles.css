@@ -43,13 +43,116 @@ body {
 #main-nav a:hover{
     color: rgb(53, 127, 125);
 }
+.content{
 
+}
+.upper-section h1{
+    font-family: "Playfair Display";
+    font-size: 48px;
+    text-align: center;
+}
+.upper-section h2{
+    font-family: "Playfair Display";
+    font-size: 32px;
+    text-align: center;
+}
+.upper-section p{
+    text-align: center;
+    font-size: 20px;
+}
 
+/*Workout Navigation*/
+#workout-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#workout-nav button{
+    background: rgba(15,19,23,0.8);
+    width: 204px;
+    height: 34px;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(53, 127, 125);
+}
+#workout-nav button:hover{
+    background: rgba(53, 127, 125,0.8);
+    border: 1px solid rgb(15,19,23);
+}
+
+/*Middle Frames*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 57px;
+    column-gap: 45px;
+}
+.middle-section{
+
+}
+
+#middle-frames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(15,19,23,0.8);
+    width: 293px;
+    height: 330px;
+    border-radius: 20px;
+}
+#middle-frames img{
+    display: block;
+    height: 165;
+    width: 293px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#middle-frames h2{
+    font-size: 22px;
+    text-align: center;
+}
+#middle-frames p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.lower-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lower-section h1{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 32px;
+}
+.lower-section p{
+    text-align: center;
+    font-size: 20px;
+}
+.lower-section button{
+    background: rgb(53, 127, 125);
+    color: white;
+    width:269px;
+    height:39px;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.lower-section button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
+}
 
 
 /*Footer*/
 #main-footer{
-    background: rgb(61, 67, 75, 0.8);
+    background: rgba(61, 67, 75, 0.8);
     text-align: center;
     padding: 20px;
 }
@@ -71,5 +174,13 @@ body {
         flex-direction: row;
         gap: 49px;
         margin: 0;
+    }
+    #workout-nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 }

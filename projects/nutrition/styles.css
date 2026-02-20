@@ -44,7 +44,71 @@ body {
     color: rgb(53, 127, 125);
 }
 
+.upper-section h1{
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+.upper-section h2{
+    font-size: 32px;
+    text-align: center;
+}
+.upper-section p{
+    font-size: 20px;
+    text-align: center;
+}
 
+.middle-section{
+    
+}
+#middle-frames img{
+    display: block;
+    width: 256px;
+    height: 248px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#middle-frames h2{
+    font-size: 22px;
+    text-align: center;
+}
+#middle-frames p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.lower-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lower-section h1{
+    font-family: "Playfair Display";
+    font-size: 32px;
+    text-align: center;
+}
+.lower-section ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+.lower-section li{
+    font-size: 18px;
+}
+.lower-section button{
+    background: rgba(15,19,23,0.8);
+    width: 269px;
+    height: 47px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid rgb(53, 127, 125);
+}
+.lower-section button:hover{
+    background: rgba(53, 127, 125,0.8);
+    border: 1px solid rgb(15,19,23);
+}
 
 
 /*Footer*/
