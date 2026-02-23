@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 body {
-    background:linear-gradient(0deg, rgb(61, 67, 75) 0%, rgb(0, 0, 0) 100%);
     background-image: url(../images/GymBackground3.jpg);
     background-size: cover;
     background-position: center;
@@ -185,7 +184,6 @@ body {
 /*LARGER DISPLAYS*/
 @media (min-width: 900px) {
 
-    
     #main-header h1{
         text-align: left;
     }
