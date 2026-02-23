@@ -1,0 +1,207 @@
+/*Matthew Hurst | CSCE 242*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-image: url(../../part5/images/GymBackground3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat";
+}
+#main-header{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+#main-header h1{
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+#main-nav{
+    display: flex;
+    justify-content: center;
+}
+#main-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+#main-nav li{
+    font-size: 20px;
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+}
+#main-nav a:hover{
+    color: rgb(53, 127, 125);
+}
+
+#content h1{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Playfair Display";
+} 
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+#upper-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(15, 19, 23, 0.8);
+    border-radius: 20px;
+    padding: 10px;
+    width: 269px;
+    height: 286px;
+}
+
+#upper-frame img{
+    display: block;
+    width: 224px;
+    height: 209px;
+    border-radius: 122px;
+}
+#upper-frame p{
+    font-size: 24px;
+}
+
+#frame-description{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(15, 19, 23, 0.8);
+    width: 77%;
+    margin: auto;
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+#middle-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#middle-frame img{
+    display: block;
+    width: 419px;
+    height: 219px;
+    border-radius: 113.5px;
+}
+#middle-frame button{
+    background: rgb(53, 127, 125);
+    width: 190px;
+    height: 39px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+#middle-frame button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
+}
+#middle-frame-txt{
+    text-align: center;
+    background: rgba(15, 19, 23, 0.8);
+    border-radius: 20px;
+    width: 559px;
+    height: 242px;
+    padding: 10px;
+}
+#middle-frame-txt h2{
+    font-size: 32px;
+    font-family: "Playfair Display";
+}
+#middle-frame-txt p{
+    font-size: 24px;
+}
+
+.lower-section{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.lower-section h2{
+    font-size: 32px;
+    text-align: center;
+}
+#lower-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#lower-frame img{
+    display: block;
+    width: 584px;
+    height: 198px;
+    border-radius: 20px;
+}
+#lower-frame button{
+    background: rgb(53, 127, 125);
+    width: 269px;
+    height: 39px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+#lower-frame button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
+}
+
+#main-footer{
+    background: rgba(61, 67, 75, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+#main-footer p{
+    font-family: "Playfair Display";
+    font-size: 16px;
+}
+/*MEDIA QUEREY*/
+/*LARGER DISPLAYS*/
+@media (min-width: 900px) {
+
+    #main-header h1{
+        text-align: left;
+    }
+    #main-nav{
+        justify-content: flex-end;
+    }
+    #main-nav ul{
+        flex-direction: row;
+        gap: 49px;
+        margin: 0;
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+        gap: 69px;
+    }
+    .middle-section{
+        flex-direction: row;
+        text-align: left;
+    }
+}
