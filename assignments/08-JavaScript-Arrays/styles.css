@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  background: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.wrap{
+  max-width: 520px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+  font-size: 48px;
+  color: #38bdf8;
+}
+
+h2{
+  margin: 8px 0 24px;
+  font-size: 30px;
+  color: #7dd3fc;
+}
+
+.mood-row{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+#moodSelect{
+  font-size: 16px;
+  padding: 6px 10px;
+  border: 2px solid #38bdf8;
+  border-radius: 6px;
+  background: #1e293b;
+  color: white;
+}
+.songs{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.songs a{
+  color: #7dd3fc;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.songs a:hover{
+  color: #38bdf8;
+
+}
+footer{
+  margin-top: 24px;
+  color: #38bdf8;
+}
+.video{
+  margin-top: 18px;
+}
+.video iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.hidden{
+  display: none;
+}
