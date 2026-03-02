@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Time</title>
+
+  <!-- W3 Modal CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Classes</h1>
+        <h2>Music Time</h2>
+
+        <section id="gallery" class="gallery"></section>
+
+  <!-- MODAL -->
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content modal-box">
+            <span id="close" class="x">&times;</span>
+
+            <div class="modal-grid">
+                <iframe id="yt"
+                    src=""
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="info">
+                    <h3 id="mTitle"></h3>
+                    <p class="by" id="mArtist"></p>
+                    <p id="mAlbumYear"></p>
+                    <p id="mGenre"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+    </body>
+
+    <footer>
+        <p>@mhurst1</p>
+    </footer>
+
+</html>
