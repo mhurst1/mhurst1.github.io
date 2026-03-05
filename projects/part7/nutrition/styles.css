@@ -1,0 +1,163 @@
+/*Matthew Hurst | CSCE 242*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-image: url(../images/Nutrition-Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat";
+}
+/*Header*/
+#main-header{
+    background: rgb(0, 0, 0, 0.5);
+    padding: 15px;
+}
+#main-header h1{
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+/*Navigation*/
+#main-nav{
+    display: flex;
+    justify-content: center;
+}
+#main-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+#main-nav li{
+    font-size: 20px;
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+}
+#main-nav a:hover{
+    color: rgb(53, 127, 125);
+}
+
+.upper-section{
+    text-align: center;
+}
+.upper-section h1{
+    font-size: 48px;
+    font-family: "Playfair Display";
+}
+.upper-section h2{
+    font-size: 32px;
+}
+.upper-section p{
+    font-size: 20px;
+    max-width: 762px;
+    max-height: 104px;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+#middle-frames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(15, 19, 23,0.8);
+    width: 256px;
+    height: 453px;
+    border-radius: 20px;
+}
+#middle-frames img{
+    display: block;
+    width: 256px;
+    height: 248px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#middle-frames h2{
+    font-size: 22px;
+    text-align: center;
+}
+#middle-frames p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.lower-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px ;
+}
+.lower-section h1{
+    font-family: "Playfair Display";
+    font-size: 32px;
+    text-align: center;
+}
+.lower-section ul{
+    list-style-type: none;
+    padding-bottom: 20px;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+.lower-section li{
+    font-size: 18px;
+}
+.lower-section button{
+    background: rgba(15,19,23,0.8);
+    width: 269px;
+    height: 47px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid rgb(53, 127, 125);
+}
+.lower-section button:hover{
+    background: rgba(53, 127, 125,0.8);
+    border: 1px solid rgb(15,19,23);
+}
+
+
+/*Footer*/
+#main-footer{
+    background: rgba(61, 67, 75, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+#main-footer p{
+    font-family: "Playfair Display";
+    font-size: 16px;
+}
+
+/*MEDIA QUEREY*/
+/*LARGER DISPLAYS*/
+@media (min-width: 900px) {
+    #main-header h1{
+        text-align: left;
+    }
+    #main-nav{
+        justify-content: flex-end;
+    }
+    #main-nav ul{
+        flex-direction: row;
+        gap: 49px;
+        margin: 0;
+    }
+    .cards{
+        padding-top: 150px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,204 @@
+/*Matthew Hurst | CSCE 242*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-image: url(../images/GymBackground3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat";
+}
+#main-header{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+#main-header h1{
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+#main-nav{
+    display: flex;
+    justify-content: center;
+}
+#main-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+#main-nav li{
+    font-size: 20px;
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+}
+#main-nav a:hover{
+    color: rgb(53, 127, 125);
+}
+
+.upper-section h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: "Playfair Display";
+}
+.upper-section p{
+    text-align: center;
+    font-size: 22px;
+}
+
+.middle-section{
+    padding: 10px;
+}
+.middle-frames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: auto;
+    background: rgba(15, 19, 23, 0.85);
+    border-radius: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.middle-frames img{
+    display: block;
+    width: 315px;
+    height: 257px;
+    border-radius: 20px;
+}
+.middle-frame-txt{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.middle-frame-txt h2{
+    font-size: 32px;
+    font-family: "Playfair Display";
+}
+.middle-frame-txt p{
+    margin: 0;
+    font-size: 22px;
+}
+.middle-frame-txt button{
+    background: rgb(53, 127, 125);
+    width: 191px;
+    height: 41px;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.middle-frame-txt button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
+}
+
+.lower-section{
+    padding-bottom: 20px;
+}
+.lower-section h1{
+    font-size: 32px;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+#lower-frames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(15, 19, 23,0.8);
+    width: 295px;
+    height: 380px;
+    border-radius: 20px;
+}
+#lower-frames img{
+    display: block;
+    width: 292px;
+    height: 162px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#lower-frames h2{
+    font-size: 22px;
+}
+#lower-frames p{
+    font-size: 18px;
+    text-align: center;
+}
+#lower-frames button{
+    background: rgb(53, 127, 125);
+    width: 138px;
+    height: 32px;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+#lower-frames button:hover{
+    background: white;
+    color: rgb(53, 127, 125);
+    border: 1px solid rgb(53, 127, 125);
+}   
+
+
+/*Footer*/
+#main-footer{
+    background: rgb(61, 67, 75, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+#main-footer p{
+    font-family: "Playfair Display";
+    font-size: 16px;
+}
+
+/*MEDIA QUEREY*/
+/*LARGER DISPLAYS*/
+@media (min-width: 900px) {
+     #main-header h1{
+        text-align: left;
+    }
+    #main-nav{
+        justify-content: flex-end;
+    }
+    #main-nav ul{
+        flex-direction: row;
+        gap: 49px;
+        margin: 0;
+    }
+    .middle-frames{
+        flex-direction: row;
+        align-items: center;
+        gap: 28px;
+    }
+    .middle-frame-txt{
+        align-items: center;
+        text-align: center;
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+        gap: 88px;
+    }
+    .lower-section h1{
+        text-align: left;
+    }
+
+}
