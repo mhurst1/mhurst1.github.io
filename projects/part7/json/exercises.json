@@ -1,0 +1,82 @@
+[
+  {
+    "_id": 1,
+    "name": "Barbell Squats",
+    "img_name": "images/Exercises-Squat.jpg",
+    "category": "Lower Body",
+    "muscle_group": "Quads and Glutes",
+    "difficulty": "Intermediate",
+    "description": "Builds lower-body strength targeting quads and glutes.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 2,
+    "name": "Dumbbell Incline-Bench Press",
+    "img_name": "images/Exercises-DB.jpg",
+    "category": "Upper Body",
+    "muscle_group": "Upper Chest and Shoulders",
+    "difficulty": "Beginner",
+    "description": "Targets the upper chest and shoulders.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 3,
+    "name": "Barbell Bench Press",
+    "img_name": "images/Exercises-Bench.jpg",
+    "category": "Upper Body",
+    "muscle_group": "Chest, Shoulders, and Triceps",
+    "difficulty": "Intermediate",
+    "description": "Develops chest, shoulder, and triceps strength.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 4,
+    "name": "Dumbbell Lunges",
+    "img_name": "images/Exercises-Lunge.jpg",
+    "category": "Lower Body",
+    "muscle_group": "Legs and Glutes",
+    "difficulty": "Beginner",
+    "description": "Improves balance and leg muscle symmetry.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 5,
+    "name": "Cable Crunch",
+    "img_name": "images/Exercises-Crunch.jpg",
+    "category": "Core",
+    "muscle_group": "Abs",
+    "difficulty": "Beginner",
+    "description": "Isolates and strengthens the abs.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 6,
+    "name": "Lat Pull Downs",
+    "img_name": "images/Exercises-Pulldowns.jpg",
+    "category": "Upper Body",
+    "muscle_group": "Back",
+    "difficulty": "Beginner",
+    "description": "Strengthens the back and improves pulling power.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 7,
+    "name": "Romanian Deadlift",
+    "img_name": "images/Exercises-RDL.jpg",
+    "category": "Lower Body",
+    "muscle_group": "Hamstrings and Glutes",
+    "difficulty": "Intermediate",
+    "description": "Builds posterior chain strength and hip hinge control.",
+    "link": "../tutorials/index.html"
+  },
+  {
+    "_id": 8,
+    "name": "Overhead Press",
+    "img_name": "images/Exercises-OHP.jpg",
+    "category": "Upper Body",
+    "muscle_group": "Shoulders and Triceps",
+    "difficulty": "Intermediate",
+    "description": "Builds upper-body pressing strength and shoulder stability.",
+    "link": "../tutorials/index.html"
+  }
+]

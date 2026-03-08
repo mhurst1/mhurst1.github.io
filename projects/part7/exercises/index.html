@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fitness Planner</title>
         <link rel="stylesheet" href="styles.css"/>
     </head>
@@ -11,6 +13,8 @@
 
             <header id="main-header">
                 <h1>Fitness Planner</h1>
+
+                <button id="nav-toggle" aria-label="Toggle Navigation">☰</button>
 
                 <nav id="main-nav">
                     <div>
@@ -32,76 +36,87 @@
                     <h2>Train Smart. Lift Strong.</h2>
                     <p>
                         Discover practical workouts designed to build strength, muscle, and skill. 
-                        Follow Proper technique, make consistent gains, and void wasting time in the gym. 
+                        Follow proper technique, make consistent gains, and avoid wasting time in the gym. 
                     </p>
                 </section>
 
                 <nav id="workout-nav">
-                    <button>All</button>
-                    <button>Upper Body</button>
-                    <button>Lower Body</button>
-                    <button>Full Body</button>
+                    <button type="button">All</button>
+                    <button type="button">Upper Body</button>
+                    <button type="button">Lower Body</button>
+                    <button type="button">Full Body</button>
                 </nav>
 
                 <section class="middle-section">
-                    <section class="cards">
+                    <section class="cards" id="exercise-list">
+                        <a class="exercise-card" href="../tutorials/index.html">
+                            <div class="middle-frames">
+                                <img src="../images/Exercises-Squat.jpg" alt="Barbell Squats">
+                                <h2>Barbell Squats</h2>
+                                <p>
+                                    Builds lower-body strength targeting quads and glutes.
+                                </p>
+                            </div>
+                        </a>
 
-                        <div id="middle-frames">
-                            <img src="../images/Exercises-Squat.jpg">
-                            <h2>Barbell Squats </h2>
-                            <p>
-                                Builds lower-body strength targeting quads and glutes.
-                            </p>
-                        </div>
+                        <a class="exercise-card" href="../tutorials/index.html">
+                            <div class="middle-frames">
+                                <img src="../images/Exercises-DB.jpg" alt="Dumbbell Incline Bench Press">
+                                <h2>Dumbbell Incline-Bench Press</h2>
+                                <p>
+                                    Targets the upper chest and shoulders.
+                                </p>
+                            </div>
+                        </a>
 
-                        <div id="middle-frames">
-                            <img src="../images/Exercises-DB.jpg">
-                            <h2>Dumbbell Incline-Bench Press</h2>
-                            <p>
-                                Targets the upper chest and shoulders.
-                            </p>
-                        </div>
+                        <a class="exercise-card" href="../tutorials/index.html">
+                            <div class="middle-frames">
+                                <img src="../images/Exercises-Bench.jpg" alt="Barbell Bench Press">
+                                <h2>Barbell Bench Press</h2>
+                                <p>
+                                    Develops chest, shoulder, and triceps strength.
+                                </p>
+                            </div>
+                        </a>
 
-                        <div id="middle-frames">
-                            <img src="../images/Exercises-Bench.jpg">
-                            <h2>Barbell Bench Press</h2>
-                            <p>
-                                Develops chest, shoulder, and triceps strength.
-                            </p>
-                        </div>
-
-                        <div id="middle-frames">
-                                <img src="../images/Exercises-Lunge.jpg">
+                        <a class="exercise-card" href="../tutorials/index.html">
+                            <div class="middle-frames">
+                                <img src="../images/Exercises-Lunge.jpg" alt="Dumbbell Lunges">
                                 <h2>Dumbbell Lunges</h2>
                                 <p>
                                     Improves balance and leg muscle symmetry.
                                 </p>
                             </div>
+                        </a>
 
-                        <div id="middle-frames">
-                            <img src="../images/Exercises-Crunch.jpg">
-                            <h2>Cable Crunch</h2>
-                            <p>
-                                Isolates and strengthens the Abs.
-                            </p>
-                        </div>
+                        <a class="exercise-card" href="../tutorials/index.html">
+                            <div class="middle-frames">
+                                <img src="../images/Exercises-Crunch.jpg" alt="Cable Crunch">
+                                <h2>Cable Crunch</h2>
+                                <p>
+                                    Isolates and strengthens the Abs.
+                                </p>
+                            </div>
+                        </a>
 
-                        <div id="middle-frames">
-                            <img src="../images/Exercises-Pulldowns.jpg">
-                            <h2>Lat Pull Downs</h2>
-                            <p>
-                                Strengthens the back and improves pulling power.
-                            </p>
-                        </div>
+                        <a class="exercise-card" href="../tutorials/index.html">
+                            <div class="middle-frames">
+                                <img src="../images/Exercises-Pulldowns.jpg" alt="Lat Pull Downs">
+                                <h2>Lat Pull Downs</h2>
+                                <p>
+                                    Strengthens the back and improves pulling power.
+                                </p>
+                            </div>
+                        </a>
                     </section>
-                    
                 </section>
+
                 <section class="lower-section">
                     <h1>Master the Basics. Crush Your Goals.</h1>
                     <p>
-                        Follow our step by step video tutorials to improve form, increase strength, and prevent injury. 
+                        Follow our step by step video tutorials to improve form, increase strength, and avoid injury. 
                     </p>
-                    <button>Start Training</button>
+                    <a class="start-training-btn" href="../tutorials/index.html">Start Training</a>
                 </section>
             </main>
 
@@ -110,5 +125,7 @@
             </footer>
 
         </div> <!--MAIN CONTENT END DIV-->
+
+        <script src="script.js"></script>
     </body>
 </html>
