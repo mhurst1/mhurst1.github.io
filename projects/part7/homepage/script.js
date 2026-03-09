@@ -41,7 +41,7 @@ function displayInfluencers() {
 }
 
 async function loadInfluencers() {
-    const url = "https://mhurst1.github.io/projects/part7/json/influencers.json";
+    const url = "https://mhurst1.github.io/projects/part7/json/homepage.json";
 
     try {
         const response = await fetch(url);
