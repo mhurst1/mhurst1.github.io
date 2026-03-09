@@ -62,7 +62,7 @@
   {
     "_id": 7,
     "name": "Romanian Deadlift",
-    "img_name": "images/Exercises-RDL.jpg",
+    "img_name": "images/Exercises-Romainian-Deadlift.jpg",
     "category": "Lower Body",
     "muscle_group": "Hamstrings and Glutes",
     "difficulty": "Intermediate",
@@ -72,7 +72,7 @@
   {
     "_id": 8,
     "name": "Overhead Press",
-    "img_name": "images/Exercises-OHP.jpg",
+    "img_name": "images/Exercises-Overhead-Press.jpg",
     "category": "Upper Body",
     "muscle_group": "Shoulders and Triceps",
     "difficulty": "Intermediate",

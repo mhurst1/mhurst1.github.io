@@ -98,13 +98,41 @@
                     </div>
                 </section>
 
+                <section class="contact-section">
+                    <h1>Contact Me</h1>
+                    <p class="contact-intro">
+                    Have questions about workouts, nutrition, or training? Send a message below.
+                    </p>
+
+                    <form id="contact-form" action="https://formsubmit.co/r.matthewhurst@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="contact-btn">Send Message</button>
+                    <p id="form-message"></p>
+                    </form>
+                </section>
+
             </main>
 
             <footer id="main-footer">
                 <p>© mhurst1</p>
             </footer>
 
-            <script src="script.js"></script>
         </div> <!--MAIN CONTENT END DIV-->
+
+        <script src="script.js"></script>
     </body>
 </html>

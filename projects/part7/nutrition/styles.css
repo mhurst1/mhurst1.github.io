@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 body {
-    background-image: url(../images/Nutrition-Background.jpg);
+    background-image: url(../images/GymBackground4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,9 +11,8 @@ body {
     margin: 0;
     font-family: "Montserrat";
 }
-/*Header*/
 #main-header{
-    background: rgb(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 15px;
 }
 #main-header h1{
@@ -21,29 +20,50 @@ body {
     font-family: "Playfair Display";
     text-align: center;
 }
-/*Navigation*/
 #main-nav{
-    display: flex;
+    display: none;
     justify-content: center;
 }
+
 #main-nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style-type: none;
     gap: 10px;
+    padding-left: 0;
 }
+
 #main-nav li{
     font-size: 20px;
 }
+
 #main-nav a{
     text-decoration: none;
     color: white;
 }
+
 #main-nav a:hover{
     color: rgb(53, 127, 125);
 }
 
+#main-nav.show{
+    display: flex;
+}
+
+/*Toggle Nav Button*/
+#nav-toggle{
+    display: block;
+    margin: 10px auto;
+    background: rgba(15,19,23,0.8);
+    color: white;
+    border: 1px solid rgb(53, 127, 125);
+    border-radius: 8px;
+    font-size: 28px;
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+}
 .upper-section{
     text-align: center;
 }
@@ -146,9 +166,23 @@ body {
     #main-header h1{
         text-align: left;
     }
+    
+   #nav-toggle{
+        margin: 0 15px;
+        font-size: 22px;
+        width: 45px;
+        height: 35px;
+    }
+
     #main-nav{
+        display: flex;
         justify-content: flex-end;
     }
+
+    #main-nav.show{
+        display: none;
+    }
+    
     #main-nav ul{
         flex-direction: row;
         gap: 49px;
