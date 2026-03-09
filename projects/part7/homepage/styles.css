@@ -51,7 +51,7 @@ body {
     display: flex;
 }
 
-/*Toggle Nav Button*/
+/* Toggle Nav Button */
 #nav-toggle{
     display: block;
     margin: 10px auto;
@@ -65,21 +65,50 @@ body {
     cursor: pointer;
 }
 
-
-
 #content h1{
     font-size: 36px;
     text-align: center;
     font-family: "Playfair Display";
-} 
-.cards{
+}
+
+/* Slideshow */
+.slideshow-wrapper{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.slide-btn{
+    background: rgba(15, 19, 23, 0.8);
+    color: white;
+    border: 1px solid rgb(53, 127, 125);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.slide-btn:hover{
+    background: rgba(53, 127, 125, 0.8);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
     gap: 20px;
     padding-bottom: 10px;
+    width: 100%;
+    max-width: 950px;
 }
-#upper-frame{
+
+.influencer-card{
+    text-decoration: none;
+    color: white;
+}
+
+.upper-frame{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,18 +117,21 @@ body {
     padding: 10px;
     width: 269px;
     height: 286px;
+    margin: auto;
 }
 
-#upper-frame img{
+.upper-frame img{
     display: block;
     width: 224px;
     height: 209px;
+    object-fit: cover;
     border-radius: 122px;
 }
-#upper-frame p{
-    font-size: 24px;
-}
 
+.upper-frame p{
+    font-size: 24px;
+    text-align: center;
+}
 #frame-description{
     text-align: center;
     font-size: 24px;
@@ -110,7 +142,6 @@ body {
     width: 77%;
     margin: auto;
 }
-
 .middle-section{
     display: flex;
     flex-direction: column;
@@ -160,7 +191,6 @@ body {
 #middle-frame-txt p{
     font-size: 24px;
 }
-
 .lower-section{
     padding-top: 20px;
     padding-bottom: 40px;
@@ -205,15 +235,14 @@ body {
     font-family: "Playfair Display";
     font-size: 16px;
 }
-/*MEDIA QUEREY*/
-/*LARGER DISPLAYS*/
-@media (min-width: 900px) {
 
+/* MEDIA QUERY */
+@media (min-width: 900px) {
     #main-header h1{
         text-align: left;
     }
-    
-   #nav-toggle{
+
+    #nav-toggle{
         margin: 0 15px;
         font-size: 22px;
         width: 45px;
@@ -228,19 +257,48 @@ body {
     #main-nav.show{
         display: none;
     }
-    
+
     #main-nav ul{
         flex-direction: row;
         gap: 49px;
         margin: 0;
     }
-    .cards{
-        flex-direction: row;
-        justify-content: center;
-        gap: 69px;
-    }
+
     .middle-section{
         flex-direction: row;
         text-align: left;
+    }
+}
+
+@media (max-width: 899px) {
+    .slideshow-wrapper{
+        flex-direction: column;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        max-width: 320px;
+    }
+
+    #middle-frame img,
+    #lower-frame img,
+    #middle-frame-txt{
+        max-width: 100%;
+    }
+
+    #middle-frame img{
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    #lower-frame img{
+        width: 100%;
+        height: auto;
+    }
+
+    #middle-frame-txt{
+        width: auto;
+        height: auto;
     }
 }

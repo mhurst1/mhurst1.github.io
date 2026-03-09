@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 1,
+    "name": "Sam Sulek",
+    "img_name": "https://workout-temple.com/wp-content/uploads/2023/12/Sam-Sulek-Posing-970x1024.jpg",
+    "youtube": "https://www.youtube.com/@sam_sulek"
+  },
+  {
+    "_id": 2,
+    "name": "Sara Saffari",
+    "img_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzYhGjuHRIAQkHVGdanf_f22m5n_7pROjJg&s",
+    "youtube": "https://www.youtube.com/@SaraSaffari"
+  },
+  {
+    "_id": 3,
+    "name": "Chris Bumstead",
+    "img_name": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Chris_Bumstead_on_Gymshark.jpg/250px-Chris_Bumstead_on_Gymshark.jpg",
+    "youtube": "https://www.youtube.com/@ChrisBumstead"
+  },
+  {
+    "_id": 4,
+    "name": "Jeff Nippard",
+    "img_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4opvrrlCeRKSXDZOO-ptUL0PbREex6kkHi7g5VPa7b4DLeAkwaC6fDQ9U5vN5LDsrLeyqwkosBoh76yVw7cmg8nSG-ab2ujeHjTyqXA&s=10",
+    "youtube": "https://www.youtube.com/@JeffNippard"
+  },
+  {
+    "_id": 5,
+    "name": "David Laid",
+    "img_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWlH4UPsyK3Fu73c2xVzMkh32ijaCKWBuqwHJw_ArWRmVoZ1nLotQU3hLIvB4GCNXdcTo4XdxgqIg59_ZwIibK7jYzD-r0a_AFG9L5lg&s=10",
+    "youtube": "https://www.youtube.com/@DavidLaid"
+  }
+]

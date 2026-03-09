@@ -9,10 +9,33 @@ if (navToggle && mainNav) {
     });
 }
 
-async function loadExercises() {
+let exercises = [];
+
+function displayExercises(exerciseArray) {
     const exerciseList = document.getElementById("exercise-list");
     if (!exerciseList) return;
 
+    exerciseList.innerHTML = "";
+
+    exerciseArray.forEach((exercise) => {
+        const card = document.createElement("a");
+        card.className = "exercise-card";
+        card.href = exercise.link || "../tutorials/index.html";
+        card.target = "_blank";
+
+        card.innerHTML = `
+            <div class="middle-frames">
+                <img src="../${exercise.img_name}" alt="${exercise.name}">
+                <h2>${exercise.name}</h2>
+                <p>${exercise.description}</p>
+            </div>
+        `;
+
+        exerciseList.appendChild(card);
+    });
+}
+
+async function loadExercises() {
     const url = "https://mhurst1.github.io/projects/part7/json/exercises.json";
 
     try {
@@ -22,37 +45,42 @@ async function loadExercises() {
             throw new Error(`HTTP error: ${response.status}`);
         }
 
-        const exercises = await response.json();
-        exerciseList.innerHTML = "";
-
-        exercises.forEach((exercise) => {
-            const card = document.createElement("a");
-            card.className = "exercise-card";
-            card.href = exercise.link || "../tutorials/index.html";
-
-            card.innerHTML = `
-                <div class="middle-frames">
-                    <img src="../${exercise.img_name}" alt="${exercise.name}">
-                    <h2>${exercise.name}</h2>
-                    <p>${exercise.description}</p>
-                </div>
-            `;
-
-            exerciseList.appendChild(card);
-        });
+        exercises = await response.json();
+        displayExercises(exercises);
     } catch (error) {
         console.error("Error loading exercises:", error);
-        exerciseList.innerHTML = `<p class="error">Exercise data could not be loaded.</p>`;
+
+        const exerciseList = document.getElementById("exercise-list");
+        if (exerciseList) {
+            exerciseList.innerHTML = `<p class="error">Exercise data could not be loaded.</p>`;
+        }
     }
 }
-const exercises = [
-  {
-    "_id": 1,
-    "name": "Barbell Squats",
-    "img_name": "images/Exercises-Squat.jpg",
-    "description": "Builds lower-body strength targeting quads and glutes.",
-    "link": "../tutorials/index.html"
-  }
-];
+
+function filterExercises(category){
+
+    if(category === "All"){
+        displayExercises(exercises);
+        return;
+    }
+
+    const filtered = exercises.filter(exercise =>
+        exercise.category === category
+    );
+
+    displayExercises(filtered);
+
+}
+
+document.querySelectorAll("#workout-nav button").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const category = button.dataset.category;
+        filterExercises(category);
+
+    });
+
+});
 
 loadExercises();

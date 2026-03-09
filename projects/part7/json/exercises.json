@@ -7,7 +7,7 @@
     "muscle_group": "Quads and Glutes",
     "difficulty": "Intermediate",
     "description": "Builds lower-body strength targeting quads and glutes.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/watch?v=gcNh17Ckjgg"
   },
   {
     "_id": 2,
@@ -17,7 +17,7 @@
     "muscle_group": "Upper Chest and Shoulders",
     "difficulty": "Beginner",
     "description": "Targets the upper chest and shoulders.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/watch?v=pKZMNVbfUzQ"
   },
   {
     "_id": 3,
@@ -27,7 +27,7 @@
     "muscle_group": "Chest, Shoulders, and Triceps",
     "difficulty": "Intermediate",
     "description": "Develops chest, shoulder, and triceps strength.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/watch?v=vcBig73ojpE"
   },
   {
     "_id": 4,
@@ -37,17 +37,17 @@
     "muscle_group": "Legs and Glutes",
     "difficulty": "Beginner",
     "description": "Improves balance and leg muscle symmetry.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/shorts/mJilHWIBWO8"
   },
   {
     "_id": 5,
     "name": "Cable Crunch",
     "img_name": "images/Exercises-Crunch.jpg",
-    "category": "Core",
+    "category": "Full Body",
     "muscle_group": "Abs",
     "difficulty": "Beginner",
     "description": "Isolates and strengthens the abs.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/shorts/BqPgnUDSRH8"
   },
   {
     "_id": 6,
@@ -57,7 +57,7 @@
     "muscle_group": "Back",
     "difficulty": "Beginner",
     "description": "Strengthens the back and improves pulling power.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/watch?v=SALxEARiMkw"
   },
   {
     "_id": 7,
@@ -67,7 +67,7 @@
     "muscle_group": "Hamstrings and Glutes",
     "difficulty": "Intermediate",
     "description": "Builds posterior chain strength and hip hinge control.",
-    "link": "../tutorials/index.html"
+    "link": "https://www.youtube.com/watch?v=_oyxCn2iSjU"
   },
   {
     "_id": 8,
